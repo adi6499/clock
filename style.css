@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contain {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  background: black;
+}
+.times {
+  width: 90%;
+  height: 40%;
+ 
+  display: flex;
+  place-items: center;
+  justify-content: center;
+}
+.hour {
+  width: 65vmin;
+  height: 65vmin;
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+
+  position: absolute;
+}
+.minuteTime {
+  width: 85%;
+  height: 85%;
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(255, 222, 114);
+  display: grid;
+  place-items: center;
+  font-size: 8vmin;
+  color: rgb(70, 66, 66);
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  font-family: "Fraunces", serif;
+  font-family: "Kanit", sans-serif;
+}
+
+.minutes {
+  width: 85%;
+  height: 85%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+
+  border-radius: 50%;
+}
+.seconds {
+  width: 85%;
+  height: 85%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+
+  border-radius: 50%;
+}
+
+
+.fade{
+    animation:fade 400ms linear forwards;
+   
+}
+@keyframes  fade{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2.4);
+        opacity: 0;
+    }
+}
+.date{
+    position:absolute;
+    top:5%;
+    left:5%;
+    color:white;
+    font-size:5vmin;
+    font-family: "Archivo Black", sans-serif;
+    font-family: "Fraunces", serif;
+    font-family: "Kanit", sans-serif;
+    
+}
